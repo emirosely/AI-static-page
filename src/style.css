@@ -1,98 +1,119 @@
 body {
-  color: black;
+  background-image: url(/images/background-2.jpg);
+  background-size: cover;
   display: block;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0 auto;
   max-width: 600px;
   text-align: center;
 }
 
-.content {
-  background: linear-gradient(
-    180deg,
-    rgb(251, 216, 158) 0%,
-    rgb(255, 255, 255) 97%
-  );
-  border: 2px solid #50252b;
-  border-radius: 15px;
-  margin: 50px 50px 0px 50px;
-  padding: 10px;
+button {
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 20px 0px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-family: "Kanit", sans-serif;
+  font-style: italic;
+  transition: all 200ms ease;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: white;
+  color: #d4605d;
+  cursor: pointer;
+}
+
+footer {
+  margin: 50px;
+  font-family: "Martel Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+footer a:hover {
+  cursor: pointer;
+  color: #d4605d;
+  text-decoration: underline;
+}
+
+h1,
+h2 {
+  font-family: "Kanit", sans-serif;
+  color: hsla(0, 0%, 0%, 0.75);
 }
 
 h1 {
-  color: #50252b;
-  font-size: 35px;
-  font-weight: 700;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   line-height: 40px;
   text-transform: uppercase;
 }
 
 h2 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 25px;
 }
 
-img {
-  border: 2px solid white;
-  margin-top: 10px;
-  outline: 1px solid white;
-  outline-offset: -15px;
-  width: 75%;
-}
-
 hr {
-  border-top: 1px solid #50252b50;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
+  border: 0;
+  height: 1px;
   margin: 20px;
 }
 
-p {
-  font-size: 13px;
-  font-weight: 100;
+img {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  margin: 10px 0px;
+  width: 80%;
 }
 
-.paragraph {
-  padding: 10px 50px 0px 50px;
+.content {
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  border-radius: 10px;
+  margin: 75px 50px;
+  padding: 25px;
 }
 
-.reference {
-  font-size: 10px;
-  font-weight: 100;
-  margin: 10px;
+.content p {
+  padding: 0px 25px;
+  font-family: "Martel Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
 }
 
-.read-more {
-  color: #be7d55;
-  font-weight: 100;
-  text-decoration: none;
+.reference a {
+  color: black;
 }
 
-.read-more:hover {
-  color: #8190a7;
-}
-
-button {
-  background-color: #fff;
-  border: 1px solid #50252b;
-  border-radius: 15px;
-  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
-  color: #50252b;
-  font-size: 16px;
-  line-height: 22px;
-  margin: 10px 0px 10px 0px;
-  padding: 16px 24px;
-  text-decoration: none;
-  transition: all 200ms ease;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #50252b;
+.reference a:hover {
   color: white;
-}
-
-.design-credit {
-  font-size: 10px;
-  padding: 30px;
-  text-decoration: none;
+  cursor: pointer;
 }
